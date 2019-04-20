@@ -1,11 +1,10 @@
 apiVersion: v1
-# NOT A REAL VOLUME. ITS JUST A SPECIFICATION/ADVERTISEMENT
 kind: PersistentVolumeClaim
 metadata:
   name: database-persistent-volume-claim
 spec:
   accessModes:
     - ReadWriteOnce
-    resources:
-      requests:
-        storage: 2Gi
+  resources:
+    requests:
+      storage: 2Gi
